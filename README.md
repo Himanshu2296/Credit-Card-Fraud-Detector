@@ -39,3 +39,29 @@ Python, pandas, NumPy, scikit-learn, joblib, and Jupyter Notebook.
 
 ## Limitations
 Predictions are estimates and should not be treated as definitive proof of fraud. The dataset's PCA-transformed features are not directly interpretable as ordinary transaction details. This project is an educational demonstration, not a production payment-security system.
+
+## Streamlit Web Application
+
+The project includes a Streamlit interface for testing the trained fraud-detection model.
+
+### Run locally
+
+1. Clone the repository.
+2. Create and activate a Python virtual environment.
+3. Install dependencies:
+
+   ```bash
+   python -m pip install -r requirements.txt
+   ```
+
+4. Download the dataset from the source listed above and place it in the `data/` directory.
+5. Run the notebook cells in order to train and save `fraud_model.joblib`.
+6. Start the application:
+
+   ```bash
+   python -m streamlit run app.py
+   ```
+
+### Limitations
+
+The model expects 30 numerical features, including PCA-transformed features `V1`–`V28`. The application is an educational demonstration, not a production payment-security system. Its predictions are estimates, not definitive proof of fraud.
