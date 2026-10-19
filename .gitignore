@@ -1,0 +1,18 @@
+# Dataset and trained model
+data/
+*.joblib
+
+# Python generated files
+__pycache__/
+*.pyc
+
+# Jupyter temporary files
+.ipynb_checkpoints/
+
+# Virtual environment
+venv/
+.venv/
+myvenv/
+
+# Environment secrets
+.env
